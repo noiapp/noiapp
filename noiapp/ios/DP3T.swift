@@ -32,7 +32,7 @@ class DP3T: RCTEventEmitter {
       try DP3TTracing.initialize(with: Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String, enviroment: .prod)
       resolve("DP3TT Initialized Correctly")
     }catch {
-      reject("Error Initializing DP3TT", "", error)
+      reject("error_initializing", "Error Initializing DP3TT", error)
     }
   }
   
@@ -43,7 +43,7 @@ class DP3T: RCTEventEmitter {
       try DP3TTracing.startTracing()
       resolve("DP3TT Initialized Correctly")
     } catch {
-      reject("Error", "Error starting dp3t", error)
+      reject("error_starting", "Error starting dp3t", error)
       
     }
   }
