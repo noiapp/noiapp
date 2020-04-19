@@ -33,7 +33,7 @@ declare const global: {HermesInternal: null | {}};
 const App = () => {
 
   useEffect(() => {
-    DP3T.initDP3t("test")
+    DP3T.initDP3t()
   }, []);
 
   return (
@@ -49,12 +49,6 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
-          <Button
-          onPress={ DP3T.initDP3t("test") }
-          title="Learn More"
-          color="#841584"
-          accessibilityLabel="Learn more about this purple button"
-        />
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Passo Uno</Text>
