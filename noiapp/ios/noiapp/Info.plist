@@ -53,5 +53,14 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+  <key>UIBackgroundModes</key>
+    <array>
+      <string>bluetooth-central</string>
+      <string>bluetooth-peripheral</string>
+    </array>
+  <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Bluetooth usage for proximity</string>
+  <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Bluetooth usage for proximity</string>
 </dict>
 </plist>

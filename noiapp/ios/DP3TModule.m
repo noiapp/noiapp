@@ -21,6 +21,10 @@
 RCT_EXTERN_METHOD(initDP3t: (RCTPromiseResolveBlock)resolve
 rejecter:(RCTPromiseRejectBlock)reject)
 
+RCT_EXTERN_METHOD(startTracking: (RCTPromiseResolveBlock)resolve
+rejecter:(RCTPromiseRejectBlock)reject)
+
+RCT_EXTERN_METHOD(endtracking)
 
 @end
 
