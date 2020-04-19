@@ -1,4 +1,8 @@
 package com.noiapp;
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
+import android.content.Intent;
 
 import android.app.Application;
 import android.content.Context;
@@ -12,6 +16,8 @@ import com.noiapp.DP3T.DP3TPackage;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+
+import static androidx.core.app.ActivityCompat.startActivityForResult;
 
 public class MainApplication extends Application implements ReactApplication {
 

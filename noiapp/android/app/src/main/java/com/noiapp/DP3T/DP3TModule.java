@@ -1,4 +1,8 @@
 package com.noiapp.DP3T;
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
+import android.content.Intent;
 import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.NativeModule;
@@ -13,6 +17,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class DP3TModule extends ReactContextBaseJavaModule {
+    private final static int REQUEST_ENABLE_BT = 9;
 
     final String MODULE_NAME = "DP3T";
     private static ReactApplicationContext reactContext;
@@ -29,7 +34,17 @@ public class DP3TModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void init(String message) {
-        DP3T.init(reactContext, "com.noiapp");
+    public void initDP3t(String message) {
+        Activity currentActivity = getCurrentActivity();
+        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (mBluetoothAdapter == null) {
+            // Device does not support Bluetooth
+        } else if (!mBluetoothAdapter.isEnabled()) {
+            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            currentActivity.startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+        } else {
+            // Bluetooth is enabled 
+            DP3T.init(reactContext, "com.noiapp");
+        }
     }
 }
