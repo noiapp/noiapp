@@ -22,7 +22,7 @@ An "official" italian app is supposed to be being developed, although the status
 - this company is member of the  [PEPP-PT](https://github.com/pepp-pt/pepp-pt-documentation) organization and it has been disclosed the app will use the PPPT-DT standard.
 - the PEPP-PT organization it an invite-only organization.  At the moment no public source code has been yet released, although they declare the code to be Mozilla licensed.
 - The standard PPPT-DP also is designed to include a centralized control of the contact informations.
-- In the last few days the [relationship among [PEPP-DP and DP-3T](https://twitter.com/mikarv/status/1250850682904760320?s=20) went awry, as any reference to DP-3T was removed from PEPP-DP.
+- In the last few days the relationship among [PEPP-DP and DP-3T](https://twitter.com/mikarv/status/1250850682904760320?s=20) went awry, as any reference to DP-3T was removed from PEPP-DP.
 
 ## Rationale
 
