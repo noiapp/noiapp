@@ -8,6 +8,7 @@ Those data can then be checked by the app to verify if you were in contact with 
 
 The application will  be a React Native application including as modules the DP-3T sdk.
 
+If you want collaborate, join us on Slack with this [invite link](https://join.slack.com/t/noiapp/shared_invite/zt-dzdakd34-KvCn3HMlebqTH4ewlGamhg) - Note the invite link expires in 30 days so if it is no more valid please [let me know](http://linkedin.com/in/msciab) so I can update it.
 
 ## Background
 
