@@ -17,6 +17,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* noiappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* noiappTests.m */; };
+		2DEE21DD244C6B03009BD75E /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE21DC244C6B03009BD75E /* Empty.swift */; };
+		2DEE21DF244C6DE1009BD75E /* DP3TModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE21DE244C6DE1009BD75E /* DP3TModule.m */; };
+		2DEE21E1244C6E98009BD75E /* DP3T.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE21E0244C6E98009BD75E /* DP3T.swift */; };
 		6EA0F235C4EA9218FCEFD9D6 /* libPods-noiapp-noiappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6F8553CDC497327FCFAC4 /* libPods-noiapp-noiappTests.a */; };
 		A45A15803CD10933A3554981 /* libPods-noiapp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C973409AC36EC948E195D50C /* libPods-noiapp-tvOS.a */; };
 		F19DEB3E6C2E7ABEDF3549B9 /* libPods-noiapp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A17E850481F40E2410948AE5 /* libPods-noiapp-tvOSTests.a */; };
@@ -54,6 +57,10 @@
 		148991D7CD3DD40E31E0E90F /* Pods-noiapp-noiappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noiapp-noiappTests.debug.xcconfig"; path = "Target Support Files/Pods-noiapp-noiappTests/Pods-noiapp-noiappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* noiapp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "noiapp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* noiapp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "noiapp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEE21DB244C6B02009BD75E /* noiapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "noiapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DEE21DC244C6B03009BD75E /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		2DEE21DE244C6DE1009BD75E /* DP3TModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DP3TModule.m; sourceTree = "<group>"; };
+		2DEE21E0244C6E98009BD75E /* DP3T.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DP3T.swift; sourceTree = "<group>"; };
 		331D105221F0CA4F82C4B548 /* Pods-noiapp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noiapp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-noiapp-tvOSTests/Pods-noiapp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C225DE6EE64AEC68524CFA9 /* Pods-noiapp-noiappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noiapp-noiappTests.release.xcconfig"; path = "Target Support Files/Pods-noiapp-noiappTests/Pods-noiapp-noiappTests.release.xcconfig"; sourceTree = "<group>"; };
 		3EBA71737384B955F6728A4E /* Pods-noiapp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noiapp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-noiapp-tvOS/Pods-noiapp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +132,7 @@
 		13B07FAE1A68108700A75B9A /* noiapp */ = {
 			isa = PBXGroup;
 			children = (
+				2DEE21DA244C6A44009BD75E /* DP3T */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -149,6 +157,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2DEE21DA244C6A44009BD75E /* DP3T */ = {
+			isa = PBXGroup;
+			children = (
+				2DEE21DE244C6DE1009BD75E /* DP3TModule.m */,
+				2DEE21E0244C6E98009BD75E /* DP3T.swift */,
+			);
+			name = DP3T;
+			sourceTree = "<group>";
+		};
 		4A3C80FF4342F65256FC53D2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +178,6 @@
 				331D105221F0CA4F82C4B548 /* Pods-noiapp-tvOSTests.debug.xcconfig */,
 				9196B0AC38F79CDD49E5246D /* Pods-noiapp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,12 +191,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2DEE21DC244C6B03009BD75E /* Empty.swift */,
 				13B07FAE1A68108700A75B9A /* noiapp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* noiappTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4A3C80FF4342F65256FC53D2 /* Pods */,
+				2DEE21DB244C6B02009BD75E /* noiapp-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -292,7 +310,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1130;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -530,8 +548,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEE21DF244C6DE1009BD75E /* DP3TModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				2DEE21DD244C6B03009BD75E /* Empty.swift in Sources */,
+				2DEE21E1244C6E98009BD75E /* DP3T.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +605,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 148991D7CD3DD40E31E0E90F /* Pods-noiapp-noiappTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C225DE6EE64AEC68524CFA9 /* Pods-noiapp-noiappTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = noiappTests/Info.plist;
@@ -644,6 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = noiapp;
+				SWIFT_OBJC_BRIDGING_HEADER = "noiapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -666,6 +690,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = noiapp;
+				SWIFT_OBJC_BRIDGING_HEADER = "noiapp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

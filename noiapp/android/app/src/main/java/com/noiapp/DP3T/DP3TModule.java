@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 public class DP3TModule extends ReactContextBaseJavaModule {
 
-    final String MODULE_NAME = "DP3TModule";
+    final String MODULE_NAME = "DP3T";
     private static ReactApplicationContext reactContext;
 
     @NonNull
