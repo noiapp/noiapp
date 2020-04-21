@@ -1,3 +1,10 @@
+This site is obsolete! We moved on implementng native apps using DP3T sources.
+
+Please follow us on (this site)[https://github.com/noiapp/website].
+
+I leave the rest for reference but DO NOT try to run this code please.  We are no more working on it
+
+
 # Noi App
 
 This project aims to create a contact tracing mobile based on the [DP-3T](https://github.com/DP-3T) standard, specifically aimed to the italian population.
