@@ -7,8 +7,8 @@
  *
  * @format
  */
-
-import React from 'react';
+const {DP3T} = NativeModules;
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -16,6 +16,8 @@ import {
   View,
   Text,
   StatusBar,
+  NativeModules,
+  Button,
 } from 'react-native';
 
 import {
@@ -29,6 +31,11 @@ import {
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
+
+  useEffect(() => {
+    DP3T.initDP3t()
+  }, []);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
