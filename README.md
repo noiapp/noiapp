@@ -1,6 +1,6 @@
 This site is obsolete! We moved on implementng native apps using DP3T sources.
 
-Please follow us on (this site)[https://github.com/noiapp/website].
+Please follow us on [this site](https://github.com/noiapp/website).
 
 I leave the rest for reference but DO NOT try to run this code please.  We are no more working on it
 
